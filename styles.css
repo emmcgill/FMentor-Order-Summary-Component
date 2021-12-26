@@ -1,0 +1,165 @@
+:root {
+    /* PRIMARY COLORS */
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
+
+    /* NEUTRAL COLORS */
+    --clr-neu-pale-blue: hsl(225, 100%, 98%);
+    --clr-neu-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-neu-dark-blue: hsl(223, 47%, 23%);
+
+    /* FONTS */
+    --fs-16px: 16px;
+    --ff-red-hat-display: 'Red Hat Display', sans-serif;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-primary-pale-blue);
+    font-family: var(--ff-red-hat-display);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+main > .component {
+    margin: 0 auto;
+    background-color: white;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 20px;
+    margin-bottom: 2.5rem;
+}
+
+main > .component > .hero {
+    background-image: url(images/illustration-hero.svg);
+    height: 225px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 2rem;
+}
+
+main > .component > .component-main {
+    width: 90%;
+    padding: .9rem;
+    margin: 0 auto;
+
+}
+
+main > .component > .component-main > .title-wrapper {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+main > .component > .component-main > .title-wrapper > .title {
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+}
+
+main > .component > .component-main > .title-wrapper > .sub-title {
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.95rem;
+}
+
+main > .component > .component-main > .order-wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: .25rem;
+    background-color: var(--clr-neu-pale-blue);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+main > .component > .component-main > .order-wrapper > .price-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1.5rem;
+}
+
+main > .component > .component-main > .order-wrapper > .price-wrapper > img {
+    height: 45px;
+}
+
+main > .component > .component-main > .order-wrapper > .price-wrapper > .amount-wrapper {
+    font-size: .95rem;
+    color: var(--clr-neu-desaturated-blue);
+}
+
+main > .component > .component-main > .order-wrapper > .price-wrapper > .amount-wrapper > h2 {
+    font-size: .85rem;
+    color: black;
+}
+
+main > .component > .component-main > .order-wrapper > a {
+    font-weight: 700;
+    font-size: .85rem;
+    color: var(--clr-primary-bright-blue);
+}
+
+main > .component > .component-main > .order-wrapper > a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, .75);
+}
+
+main > .component > .component-main > .buttons-wrapper > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: .85rem 0;
+    font-size: .90rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-neu-desaturated-blue);
+}
+
+main > .component > .component-main > .buttons-wrapper > .proceed-btn {
+    background-color: var(--clr-primary-bright-blue);
+    color: white;
+    margin-bottom: 1rem;
+    box-shadow: 0px 15px 25px -10px hsla(245, 75%, 52%, 0.5);
+
+}
+
+main > .component > .component-main > .buttons-wrapper > .proceed-btn:hover {
+    background-color: hsla(245, 75%, 52%, .75);
+}
+
+main > .component > .component-main > .buttons-wrapper > .cancel-btn {
+    margin-bottom: 1rem;
+}
+
+main > .component > .component-main > .buttons-wrapper > .cancel-btn:hover {
+    color: hsl(224, 23%, 40%);
+}
+
+@media (min-width: 750px) {
+    body {
+        background: url(/images/pattern-background-desktop.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: var(--clr-primary-pale-blue);
+    }
+
+    main > .component {
+        box-shadow: 0px 15px 25px -10px hsla(245, 75%, 52%, 0.5);
+    }
+}
+
+
+
