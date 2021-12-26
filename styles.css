@@ -150,7 +150,7 @@ main > .component > .component-main > .buttons-wrapper > .cancel-btn:hover {
 
 @media (min-width: 750px) {
     body {
-        background: url(/images/pattern-background-desktop.svg);
+        background: url(images/pattern-background-desktop.svg);
         background-position: top;
         background-repeat: no-repeat;
         background-color: var(--clr-primary-pale-blue);
