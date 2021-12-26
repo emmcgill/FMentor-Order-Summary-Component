@@ -38,6 +38,7 @@ main > .component {
     max-width: 450px;
     border-radius: 20px;
     margin-bottom: 2.5rem;
+    box-shadow: 0px 15px 25px -10px hsla(245, 75%, 52%, 0.5);
 }
 
 main > .component > .hero {
@@ -154,10 +155,6 @@ main > .component > .component-main > .buttons-wrapper > .cancel-btn:hover {
         background-position: top;
         background-repeat: no-repeat;
         background-color: var(--clr-primary-pale-blue);
-    }
-
-    main > .component {
-        box-shadow: 0px 15px 25px -10px hsla(245, 75%, 52%, 0.5);
     }
 }
 
